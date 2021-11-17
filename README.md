@@ -1,4 +1,4 @@
 # ElectroSys
  
-Open Source UI for Voiting System
+Open Source UI for an Online Voting System
 animated and everything :)

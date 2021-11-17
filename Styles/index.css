@@ -30,26 +30,6 @@
     /* background-color: aqua; */
 }
 
-.logo-wrapper {
-    height: 50%;
-    width: 100%;
-    /* background-color:white; */
-    align-self: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo {
-    height: 50px;
-    width: 50px;
-    /* opacity: 0; */
-    /* color: white; */
-    background: url(/svg/vote.svg) left bottom no-repeat;
-    animation: blink 4s infinite;
-    /* background-color:white; */
-}
-
 #title-wrapper {
     height: 30%;
     width: 100%;
@@ -57,13 +37,6 @@
     align-items: flex-end;
     justify-content: center;
     /* border: 1px solid red; */
-}
-
-#title {
-    /* background-color: blue; */
-    font-size: 20px;
-    font-weight: 700;
-    /* white-space: nowrap; */
 }
 
 #title-subText-wrapper {

@@ -4,18 +4,63 @@
 
 .candidateList {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0px;
     list-style-type: none;
+    padding-bottom: 200px;
     /* border: 1px solid white; */
+    overflow: scroll;
+    /* background-color: red; */
 }
 
-.candidate-wrapper {}
+.candidate-wrapper {
+    width: 90%;
+    height: 230px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    background: white;
+    animation: fadeDown 1s forwards;
+    animation: float-minor-x2 4s ease-in-out infinite;
+}
 
-.candidate-image {}
+.candidate-image {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-image: url('/Images/candidates/candidate1.jpg');
+    background-size: cover;
+}
 
-.candidate-name {}
+.candidate-name {
+    color: #0059A4;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 5px;
+}
 
-.candidate-position {}
+.candidate-position {
+    color: #0059A4;
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 0px;
+}
 
-.candidate-options {}
+.candidate-options {
+    display: flex;
+    flex-direction: row;
+}
 
-.button-vote {}
+.button-vote {
+    height: 30px;
+    width: 100px;
+    background-color: #1889e6;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}

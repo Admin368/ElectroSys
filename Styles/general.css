@@ -231,6 +231,9 @@ body {
     list-style: none;
 }
 
+
+/* ANIMATIONS */
+
 @keyframes float {
     0% {
         margin-top: 0px;
@@ -249,6 +252,18 @@ body {
     }
     50% {
         margin-top: 10px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
+
+@keyframes float-minor-x2 {
+    0% {
+        margin-top: 0px;
+    }
+    50% {
+        margin-top: 5px;
     }
     100% {
         margin-top: 0px;

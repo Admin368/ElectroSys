@@ -1,4 +1,9 @@
 var isMenuOpen = false;
+var loadingIcon = 'loading3.svg';
+
+$(document).ready(() => {
+    // alert('done');
+})
 
 const menuOpen = () => {
     $('.menu-wrapper').css("height", "150px");
@@ -23,10 +28,17 @@ const menuToggle = () => {
     }
 }
 
+const loadingShow = () => {
+    $('.content').css('background', 'url(../svg/' + loadingIcon + ')');
+}
+const loadingHide = () => {
+    $('.content').css('background', 'none');
+}
+
+
 $('.topBar-sandwich-wrapper').on('click', () => { menuToggle() });
 
 //LINKS
-
 $('.link').on('click', (e) => {
     var link = e.target.id;
     console.log(link);

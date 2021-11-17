@@ -2,13 +2,11 @@
     /* background-color: #0059A4; */
 }
 
-.topBar {}
-
-.topBar-logoWrapper {}
-
-.topBar-sandwich {}
-
-.candidateList {}
+.candidateList {
+    flex: 1;
+    list-style-type: none;
+    /* border: 1px solid white; */
+}
 
 .candidate-wrapper {}
 

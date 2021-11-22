@@ -24,7 +24,7 @@ candidates.map((candidate, index) => {
             <div class='candidate-name text'>${candidate.name}</div>
             <div class='candidate-position text'>${candidate.position}</div>
             <div class='candidate-options'>
-                <div class='button button-vote text'>CHOOSE</div>
+                <a id='${candidate.id}_choose' data-link='confirm.html' class='button button-vote text link'>CHOOSE</a>
             </div>
         </li>
     `

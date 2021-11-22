@@ -38,10 +38,13 @@ const loadingHide = () => {
 
 $('.topBar-sandwich-wrapper').on('click', () => { menuToggle() });
 
+var link2;
 //LINKS
 $('.link').on('click', (e) => {
-    var link = e.target.id;
-    console.log(link);
+    var id = '#' + e.target.id;
+    // link = $(id).data('link');
+    link = $(id).attr('data-link');
+    console.log('LINK CLICKED :' + id);
     menuClose();
     $('.site-wrapper').css('animation', 'fadeUp 2s forwards');
     setTimeout(() => {

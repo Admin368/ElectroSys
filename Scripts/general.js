@@ -4,7 +4,7 @@ var loadingIcon = 'loading3.svg';
 
 // CANDIDATES
 const imageFolder = 'images/candidates/';
-const candidates = [
+const candidate_array = [
     { id: 'candiate0', name: 'CAPTAIN ALEX', position: 'President', image: imageFolder + 'candidate1.jpg' },
     { id: 'candiate1', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate2.jpg' },
     { id: 'candiate2', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate3.jpg' },
@@ -17,7 +17,7 @@ const candidates = [
     { id: 'candiate9', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate2.jpg' },
     { id: 'candiate10', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate3.jpg' },
 ]
-var currentSelectedCandidate = null; // index of selected Candidate
+var candiate_selected = null; // index of selected Candidate
 
 
 

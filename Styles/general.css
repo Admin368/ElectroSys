@@ -32,11 +32,20 @@ body {
     background-repeat: no-repeat;
 }
 
-body::-webkit-scrollbar-track {
+.candidateList::-webkit-scrollbar {
     background-color: transparent;
     outline: 0px solid red;
-    opacity: 0;
-    border-radius: 25px;
+    opacity: 1;
+    width:4px;
+    /* border-radius: 10px; */
+    /* display: none; */
+    /* width: 400px; */
+}
+.candidateList::-webkit-scrollbar-thumb {
+    background-color: skyblue;
+    outline: 0px solid red;
+    opacity: 1;
+    border-radius: 10px;
     /* display: none; */
     /* width: 400px; */
 }

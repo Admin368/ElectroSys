@@ -1,6 +1,26 @@
 var isMenuOpen = false;
 var loadingIcon = 'loading3.svg';
 
+
+// CANDIDATES
+const imageFolder = 'images/candidates/';
+const candidates = [
+    { id: 'candiate0', name: 'CAPTAIN ALEX', position: 'President', image: imageFolder + 'candidate1.jpg' },
+    { id: 'candiate1', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate2.jpg' },
+    { id: 'candiate2', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate3.jpg' },
+    { id: 'candiate3', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate4.jpg' },
+    { id: 'candiate4', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate1.jpg' },
+    { id: 'candiate5', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate2.jpg' },
+    { id: 'candiate6', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate3.jpg' },
+    { id: 'candiate7', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate4.jpg' },
+    { id: 'candiate8', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate1.jpg' },
+    { id: 'candiate9', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate2.jpg' },
+    { id: 'candiate10', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate3.jpg' },
+]
+var currentSelectedCandidate = null; // index of selected Candidate
+
+
+
 $(document).ready(() => {
     // alert('done');
 })

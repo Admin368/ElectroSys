@@ -31,9 +31,12 @@ candidates.map((candidate, index) => {
     $('.candidateList').append(candidateTemplate);
 });
 
-$('button-vote').on('click', (e) => {
+$('.candidateList').on('click','.button-vote', (e) => {
     // const candidate
-    // console.log(this).id;
+    var id = '#' + e.target.id;
+    var link = $(id).data('link');
+    console.log('voted');
+    console.log(link);
 });
 
 // $('.candidateList').ap

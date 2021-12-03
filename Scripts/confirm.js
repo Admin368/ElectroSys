@@ -20,3 +20,24 @@ function candidate_selected_populate(){
 }
 
 // JQUERY AREA
+
+// CANCEL VOTE
+$('.candidateList').on('click','#confirm-cancel', (e) => {
+    var id = '#' + e.target.id;
+    var link = $(id).data('link');
+    window.location.href = link;
+});
+
+
+// CONFIRM VOTE
+$('.candidateList').on('click','#confirm-confirmed', (e) => {
+    var id = '#' + e.target.id;
+    var link = $(id).data('link');
+    var index = $(id).data('index');
+    candidate_selected = index;
+    console.log('Selected -> currentSelected Candidate:'+candidate_selected+' '+candidate_array[candidate_selected].name);
+    window.location.href = link;
+});
+
+
+

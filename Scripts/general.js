@@ -1,5 +1,10 @@
 var isMenuOpen = false;
+var isLoadingDone = false;
 var loadingIcon = 'loading3.svg';
+var defaultLoadingChecker = '.content';
+// var defaultLoadingChecker = '.candidateList';
+var useDefaultLoadingChecker = true;
+
 
 
 // CANDIDATES
@@ -48,13 +53,39 @@ const menuToggle = () => {
     }
 }
 
+
+// LOADING ICON
 const loadingShow = () => {
     $('.content').css('background', 'url(../svg/' + loadingIcon + ')');
 }
 const loadingHide = () => {
     $('.content').css('background', 'none');
 }
+const loadingCheck = (div) => {
+    if(!($(div).is(':empty'))){
+        if(isLoadingDone==false){
+            console.log('loaded');
+            loadingHide();
+            isLoadingDone = true;
+        }
+    }
+    
+}
 
+const setLoadingChecker = (div) =>{
+    useDefaultLoadingChecker = false();
+    $(div).on('DOMSubtreeModified', function(){
+        loadingCheck(div);
+    });
+    
+}
+
+// DEAULT LOADING CHECKER
+$(defaultLoadingChecker).on('DOMSubtreeModified', function(){
+    if(useDefaultLoadingChecker==true){
+        loadingCheck(defaultLoadingChecker);
+    }
+});
 
 $('.topBar-sandwich-wrapper').on('click', () => { menuToggle() });
 

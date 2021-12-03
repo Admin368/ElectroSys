@@ -4,7 +4,7 @@ $(document).ready(()=>{
 // JQUERY AREA
 function candidate_populate(){
     candidate_array.map((candidate, index) => {
-        loadingHide();
+        // loadingHide();
         console.log(candidate);
         const candidateTemplate = `
             <li id='${candidate.id}' class='candidate-wrapper'>

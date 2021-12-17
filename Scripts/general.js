@@ -22,7 +22,7 @@ const candidate_array = [
     { id: 'candiate9', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate2.jpg' },
     { id: 'candiate10', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate3.jpg' },
 ]
-var candiate_selected = null; // index of selected Candidate
+var candidate_selected; // index of selected Candidate
 
 
 
@@ -62,27 +62,27 @@ const loadingHide = () => {
     $('.content').css('background', 'none');
 }
 const loadingCheck = (div) => {
-    if(!($(div).is(':empty'))){
-        if(isLoadingDone==false){
+    if (!($(div).is(':empty'))) {
+        if (isLoadingDone == false) {
             console.log('loaded');
             loadingHide();
             isLoadingDone = true;
         }
     }
-    
+
 }
 
-const setLoadingChecker = (div) =>{
+const setLoadingChecker = (div) => {
     useDefaultLoadingChecker = false();
-    $(div).on('DOMSubtreeModified', function(){
+    $(div).on('DOMSubtreeModified', function() {
         loadingCheck(div);
     });
-    
+
 }
 
 // DEAULT LOADING CHECKER
-$(defaultLoadingChecker).on('DOMSubtreeModified', function(){
-    if(useDefaultLoadingChecker==true){
+$(defaultLoadingChecker).on('DOMSubtreeModified', function() {
+    if (useDefaultLoadingChecker == true) {
         loadingCheck(defaultLoadingChecker);
     }
 });

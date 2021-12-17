@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="Styles/general.css">
     <link rel="stylesheet" href="Styles/index.css">
     <link rel="stylesheet" href="Styles/login.css">
+    <link rel="stylesheet" href="Styles/forms.css">
 
     <title>Home</title>
 </head>
@@ -33,24 +34,26 @@
                     </div>
                 </div>
             </div>
+            <form id='form-section-wrapper'>
+                <div id='form-section-1' class='section input-wrapper'>
 
-            <div id='section-2' class='section input-wrapper'>
+                    <div id='input-id' data-input-id='id' class='input-item'>
+                        <p id='input-id-title' data-input-id='id'  class='input-title text'>ID</p>
+                        <input id='input-id-value' data-input-id='id' data-input-error='false' class='input-value text'/>
+                        <!-- <div id='input-id-error' class='input-error'></div> -->
+                    </div>
+                    <div id='input-password' data-input-id='password' class='input-item'>
+                        <p id='input-password-title' data-input-id='password'  class='input-title text'>PASSWORD</p>
+                        <input id='input-password-value' type='password' data-input-id='password'  data-input-error='false' class='input-value text'>
+                        <!-- <div id='input-password-error' class='input-error'></div> -->
+                    </div>
 
-                <div id='input-id' data-input-id='id' class='input-item'>
-                    <p id='input-id-title' data-input-id='id' class='input-title text'>ID</p>
-                    <input id='input-id-value' data-input-id='id' class='input-value text'>
                 </div>
-                <div id='input-password' data-input-id='password' class='input-item'>
-                    <p id='input-password-title' data-input-id='password' class='input-title text'>PASSWORD</p>
-                    <input id='input-password-value' data-input-id='password' class='input-value text'>
+                <div id='form-section-2' class='section'>
+                    <input type='submit' value="LOGIN" id='butn-login' data-link='vote.html' class='button button-light text submit'/>
+                    <!-- <a id='butn-login' data-link='vote.html' class='button button-light text submit'>LOGIN</a> -->
                 </div>
-
-            </div>
-
-
-            <div id='section-3' class='section'>
-                <a id='butn-login' data-link='login.html' class='button button-light text link'>LOGIN</a>
-            </div>
+            </form>
         </div>
     </div>
 </body>
@@ -63,5 +66,6 @@
 <script src="scripts/jquery.js"></script>
 <script src="scripts/general.js"></script>
 <script src="scripts/login.js"></script>
+<script src="scripts/form.js"></script>
 
 </html>

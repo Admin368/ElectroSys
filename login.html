@@ -24,7 +24,7 @@
             <div id='section-1' class='section'>
                 <div id='header-wrapper'>
                     <div class='logo-wrapper'>
-                        <div class='logo'></div>
+                        <div id='logo-link' data-link="index.html" class='logo link'></div>
                     </div>
                     <div id='title-wrapper'>
                         <div class='text text-title'>UESTC ISU VOTING</div>
@@ -34,24 +34,27 @@
                     </div>
                 </div>
             </div>
-            <form id='form-section-wrapper'>
-                <div id='form-section-1' class='section input-wrapper'>
+            <form id='form-login' class='form-section-wrapper'>
+                <div id='' class='form-section-1 section input-wrapper'>
 
                     <div id='input-id' data-input-id='id' class='input-item'>
-                        <p id='input-id-title' data-input-id='id'  class='input-title text'>ID</p>
-                        <input id='input-id-value' data-input-id='id' data-input-error='false' class='input-value text'/>
-                        <!-- <div id='input-id-error' class='input-error'></div> -->
+                        <p id='input-id-title' data-input-id='id' class='input-title text'>ID</p>
+                        <input id='input-id-value' data-input-id='id' data-input-error='false' class='input-value text' />
                     </div>
                     <div id='input-password' data-input-id='password' class='input-item'>
-                        <p id='input-password-title' data-input-id='password'  class='input-title text'>PASSWORD</p>
-                        <input id='input-password-value' type='password' data-input-id='password'  data-input-error='false' class='input-value text'>
-                        <!-- <div id='input-password-error' class='input-error'></div> -->
+                        <p id='input-password-title' data-input-id='password' class='input-title text'>PASSWORD</p>
+                        <input id='input-password-value' type='password' data-input-id='password' data-input-error='false' class='input-value text'>
                     </div>
 
                 </div>
-                <div id='form-section-2' class='section'>
-                    <input type='submit' value="LOGIN" id='butn-login' data-link='vote.html' class='button button-light text submit'/>
+                <div id='' class='form-section-2 section'>
+                    <input type='submit' value="LOGIN" id='butn-login' data-link='vote.html' class='button button-light text submit' />
                     <!-- <a id='butn-login' data-link='vote.html' class='button button-light text submit'>LOGIN</a> -->
+                    <p data-input-id='email' class='text'>
+                        Dont have an account?
+                        <a id='form-redirect' data-link='register.html' class='link form-link text'>Register</a>
+                    </p>
+
                 </div>
             </form>
         </div>

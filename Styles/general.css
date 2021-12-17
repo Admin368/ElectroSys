@@ -1,6 +1,6 @@
 body {
     background-color: #0059A4;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 .site-wrapper {
@@ -36,11 +36,12 @@ body {
     background-color: transparent;
     outline: 0px solid red;
     opacity: 1;
-    width:4px;
+    width: 4px;
     /* border-radius: 10px; */
     /* display: none; */
     /* width: 400px; */
 }
+
 .candidateList::-webkit-scrollbar-thumb {
     background-color: skyblue;
     outline: 0px solid red;
@@ -85,7 +86,7 @@ body {
 
 .text {
     color: white;
-    cursor:default;
+    cursor: default;
     white-space: nowrap;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -171,8 +172,7 @@ body {
     /* background-color: red; */
     align-self: flex-end;
     float: right;
-    cursor:pointer;
-
+    cursor: pointer;
     /* overflow: hidden; */
 }
 
@@ -266,14 +266,15 @@ body {
     padding: 2px 0px 2px 0px;
 }
 
-.pointer{
-    cursor:pointer;
+.pointer {
+    cursor: pointer;
 }
 
-.link{
-    cursor:pointer;    
-
+.link {
+    cursor: pointer;
 }
+
+
 /* ANIMATIONS */
 
 @keyframes float {

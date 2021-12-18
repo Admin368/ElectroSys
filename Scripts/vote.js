@@ -1,8 +1,8 @@
-$(document).ready(()=>{
-    candidate_populate();
-})
-// JQUERY AREA
-function candidate_populate(){
+$(document).ready(() => {
+        candidate_populate();
+    })
+    // JQUERY AREA
+function candidate_populate() {
     candidate_array.map((candidate, index) => {
         // loadingHide();
         console.log(candidate);
@@ -22,13 +22,16 @@ function candidate_populate(){
 
 
 // JQUERY AREA
-$('.candidateList').on('click','.button-vote', (e) => {
+$('.candidateList').on('click', '.button-vote', (e) => {
     // const candidate
     var id = '#' + e.target.id;
     var link = $(id).data('link');
     var index = $(id).data('index');
-    candidate_selected = index;
-    console.log('Selected -> currentSelected Candidate:'+candidate_selected+' '+candidate_array[candidate_selected].name);
-    // console.log(link);
+    // candidate_selected = getRecord('candidate_selected');
+    // console.log(`cockie_way:${candidate_selected}`);
+    setRecord('candidate_selected', index, 1);
+    candidate_selected = getRecord('candidate_selected');
+    console.log('Selected -> currentSelected Candidate:' + candidate_selected + ' ' + candidate_array[candidate_selected].name);
     window.location.href = link;
+
 });

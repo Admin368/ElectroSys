@@ -14,7 +14,7 @@ function onFormRegisterSubmit() {
     var form_notice = `
         <div class='form-notice-wrapper'>
             <p class=' text form-notice'>A link has been sent to your email</p>
-             <a/  href='http://${domain}'target="_blank" class='form-link text form-notice'>${email}<a/> 
+             <a  href='http://${domain}'target="_blank" class='form-link text form-notice'>${email}<a/> 
              <p class='text form-notice'> to reset your Password </p>
         </div>
     `;

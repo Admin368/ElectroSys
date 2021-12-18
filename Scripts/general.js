@@ -11,16 +11,15 @@ var useDefaultLoadingChecker = true;
 const imageFolder = 'images/candidates/';
 const candidate_array = [
     { id: 'candiate0', name: 'CAPTAIN ALEX', position: 'President', image: imageFolder + 'candidate1.jpg' },
-    { id: 'candiate1', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate2.jpg' },
-    { id: 'candiate2', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate3.jpg' },
-    { id: 'candiate3', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate4.jpg' },
-    { id: 'candiate4', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate1.jpg' },
-    { id: 'candiate5', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate2.jpg' },
-    { id: 'candiate6', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate3.jpg' },
-    { id: 'candiate7', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate4.jpg' },
-    { id: 'candiate8', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate1.jpg' },
-    { id: 'candiate9', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate2.jpg' },
-    { id: 'candiate10', name: 'ALIX WONDER', position: 'President', image: imageFolder + 'candidate3.jpg' },
+    { id: 'candiate1', name: 'NEIL HAMER', position: 'President', image: imageFolder + 'candidate2.jpg' },
+    { id: 'candiate2', name: 'ANIQA ROBINSON', position: 'President', image: imageFolder + 'candidate3.jpg' },
+    { id: 'candiate3', name: 'SUMMER-LOUISE MCGRATH', position: 'President', image: imageFolder + 'candidate4.jpg' },
+    { id: 'candiate4', name: 'KAROL LUCAS', position: 'President', image: imageFolder + 'candidate1.jpg' },
+    { id: 'candiate5', name: 'VIOLA RUTLEDGE', position: 'President', image: imageFolder + 'candidate2.jpg' },
+    { id: 'candiate6', name: 'EMILY ZAVALA', position: 'President', image: imageFolder + 'candidate3.jpg' },
+    { id: 'candiate7', name: 'TYREKE JUSTICE', position: 'President', image: imageFolder + 'candidate4.jpg' },
+    { id: 'candiate8', name: 'PIPER HERBERT', position: 'President', image: imageFolder + 'candidate1.jpg' },
+    { id: 'candiate9', name: 'MALIKAH MURILLO', position: 'President', image: imageFolder + 'candidate2.jpg' },
 ]
 var candidate_selected; // index of selected Candidate
 

@@ -76,7 +76,7 @@ function drawChart(type, data) {
     var results = data;
     const ctx = $('#myChart');
     const myChart = new Chart(ctx, {
-        // responsive: true,
+        responsive: true,
         scaleFontColor: "#FFFFFF",
         type: type,
         data: {

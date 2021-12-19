@@ -3,3 +3,41 @@
     /* height: 500px; */
     /* overflow: scroll; */
 }
+
+.resultList {}
+
+.resultSection {}
+
+#totalResults {}
+
+.result-div-equal {
+    flex: 1;
+}
+
+.result-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.result-col {
+    display: flex;
+    flex-direction: row;
+}
+
+.result-wrapper {}
+
+.result-title {
+    color: #0059A4;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.result-value {
+    color: #0059A4;
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 0px;
+    text-align: center;
+}

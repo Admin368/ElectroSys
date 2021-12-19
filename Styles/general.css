@@ -32,40 +32,6 @@ body {
     background-repeat: no-repeat;
 }
 
-.candidateList {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 0px;
-    list-style-type: none;
-    padding-bottom: 200px;
-    /* border: 1px solid white; */
-    overflow-y: scroll;
-    overflow-x: none;
-    /* background-color: transparent; */
-}
-
-.candidateList::-webkit-scrollbar {
-    background-color: transparent;
-    outline: 0px solid red;
-    opacity: 1;
-    width: 4px;
-    /* border-radius: 10px; */
-    /* display: none; */
-    /* width: 400px; */
-}
-
-.candidateList::-webkit-scrollbar-thumb {
-    background-color: skyblue;
-    outline: 0px solid red;
-    opacity: 1;
-    border-radius: 10px;
-    /* display: none; */
-    /* width: 400px; */
-}
-
 .button {
     margin: 5px;
     height: 50px;

@@ -57,7 +57,11 @@
 #vote-paper {
     height: 150px;
     width: 100px;
-    background-color: #F7F7F7;
+    background-color: #ffffff;
+    background-image: url('../Images/logo/isu.png');
+    background-size: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
     transition: 1s;
     animation: float 4s infinite;
 }

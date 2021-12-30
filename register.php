@@ -35,7 +35,7 @@
                 <div id='header-wrapper'>
                     <div class='logo-wrapper'>
                         <!-- <div class='logo'></div> -->
-                        <div id='logo-link' data-link="index.html" class='logo link'></div>
+                        <div id='logo-link' data-link="index.php" class='logo link'></div>
 
                     </div>
                     <div id='title-wrapper'>
@@ -58,7 +58,7 @@
                     <input type='submit' value="REGISTER" id='button-register' class='button button-light text submit' />
                     <p data-input-id='email' class='text'>
                         Have an account already?
-                        <a id='form-redirect' data-link='login.html' class='link form-link text'>Login</a>
+                        <a id='form-redirect' data-link='login.php' class='link form-link text'>Login</a>
                     </p>
                 </div>
             </form>

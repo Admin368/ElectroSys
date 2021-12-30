@@ -7,7 +7,7 @@ $(document).ready(() => {
 function onFormLoginSubmit() {
     console.log('FORM LOGIN SUBMITTING');
     setTimeout(() => {
-        window.location.href = 'vote.html';
+        window.location.href = 'vote.php';
     }, 1000)
 }
 // JQUERY AREA

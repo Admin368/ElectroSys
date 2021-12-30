@@ -12,7 +12,7 @@ function candidate_populate() {
                 <div class='candidate-name text'>${candidate.name}</div>
                 <div class='candidate-position text'>${candidate.position}</div>
                 <div class='candidate-options'>
-                    <a id='${candidate.id}_choose' data-link='confirm.html' data-index='${index}' class='button button-vote text'>CHOOSE</a>
+                    <a id='${candidate.id}_choose' data-link='confirm.php' data-index='${index}' class='button button-vote text'>CHOOSE</a>
                 </div>
             </li>
         `

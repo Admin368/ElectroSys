@@ -20,8 +20,8 @@ function candidate_selected_populate() {
             <div class='candidate-name confirm-name text'>${candidate.name}</div>
             <div class='candidate-position confirm-position text'>${candidate.position}</div>
             <div class='candidate-options confirm-options '>
-                <a id='confirm-confirmed' data-link='thankYou.html' data-index='${index}' class='button button-vote text'>CONFIRM</a>
-                <a id='confirm-cancel' data-link='vote.html' data-index='${index}' class='button button-vote text'>CANCEL</a>
+                <a id='confirm-confirmed' data-link='thankYou.php' data-index='${index}' class='button button-vote text'>CONFIRM</a>
+                <a id='confirm-cancel' data-link='vote.php' data-index='${index}' class='button button-vote text'>CANCEL</a>
             </div>
         </li>
     `;

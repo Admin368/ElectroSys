@@ -30,8 +30,8 @@
         <div class='content-wrapper'>
             <div class='topBar'>
                 <div class='topBar-logo-wrapper'>
-                    <div id='logo-link' data-link="index.html" class='topBar-logo link'></div>
-                    <div data-link='index.html' class='topBar-logo-title text link'>ISU VOTER</div>
+                    <div id='logo-link' data-link="index.php" class='topBar-logo link'></div>
+                    <div data-link='index.php' class='topBar-logo-title text link'>ISU VOTER</div>
                 </div>
                 <div class='topBar-sandwich-wrapper'>
                     <div class='topBar-sandwich-text text'>Menu</div>
@@ -40,8 +40,8 @@
             </div>
             <ul class='menu-wrapper'>
                 <li id='menu' class='menu-item-wrapper text'>
-                    <a id='menu-logout' data-link='vote.html' class='menu-item link'>Vote</a>
-                    <a id='menu-logout' data-link='index.html' class='menu-item link'>Logout</a>
+                    <a id='menu-logout' data-link='vote.php' class='menu-item link'>Vote</a>
+                    <a id='menu-logout' data-link='index.php' class='menu-item link'>Logout</a>
                 </li>
             </ul>
             <div class='content'>
@@ -51,8 +51,8 @@
                         <div class='candidate-name confirm-name text'>${candidate.name}</div>
                         <div class='candidate-position confirm-position text'>${candidate.position}</div>
                         <div class='candidate-options confirm-options '>
-                            <a id='confirm-confirmed' data-link='thankYou.html' data-index='${index}' class='button button-vote text'>CONFIRM</a>
-                            <a id='confirm-cancel' data-link='vote.html' data-index='${index}' class='button button-vote text'>CANCEL</a>
+                            <a id='confirm-confirmed' data-link='thankYou.php' data-index='${index}' class='button button-vote text'>CONFIRM</a>
+                            <a id='confirm-cancel' data-link='vote.php' data-index='${index}' class='button button-vote text'>CANCEL</a>
                         </div>
                     </li> -->
                 </ul>

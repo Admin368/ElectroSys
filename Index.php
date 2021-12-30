@@ -23,7 +23,7 @@
         <div class='content-wrapper'>
             <div class='topBar'>
                 <div class='topBar-logo-wrapper link'>
-                    <div id='logo-link' data-link="index.html" class='topBar-logo'></div>
+                    <div id='logo-link' data-link="index.php" class='topBar-logo'></div>
                     <div class='topBar-logo-title text'>ISU VOTER</div>
                 </div>
                 <div class='topBar-sandwich-wrapper'>

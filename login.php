@@ -34,7 +34,7 @@
             <div id='section-1' class='section'>
                 <div id='header-wrapper'>
                     <div class='logo-wrapper'>
-                        <div id='logo-link' data-link="index.html" class='logo link'></div>
+                        <div id='logo-link' data-link="index.php" class='logo link'></div>
                     </div>
                     <div id='title-wrapper'>
                         <div class='text text-title'>UESTC ISU VOTING</div>
@@ -58,11 +58,11 @@
 
                 </div>
                 <div id='' class='form-section-2 section'>
-                    <input type='submit' value="LOGIN" id='butn-login' data-link='vote.html' class='button button-light text submit' />
-                    <!-- <a id='butn-login' data-link='vote.html' class='button button-light text submit'>LOGIN</a> -->
+                    <input type='submit' value="LOGIN" id='butn-login' data-link='vote.php' class='button button-light text submit' />
+                    <!-- <a id='butn-login' data-link='vote.php' class='button button-light text submit'>LOGIN</a> -->
                     <p data-input-id='email' class='text'>
                         Dont have an account?
-                        <a id='form-redirect' data-link='register.html' class='link form-link text'>Register</a>
+                        <a id='form-redirect' data-link='register.php' class='link form-link text'>Register</a>
                     </p>
 
                 </div>

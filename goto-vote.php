@@ -55,8 +55,8 @@
                         </div>
                     </div>
                     <div id='login-bottom'>
-                        <a id='button-login' data-link='login.html' class='button button-light text link'>LOGIN</a>
-                        <a id='button-register' data-link='register.html' class='button button-dark text link'>REGISTER ACCOUNT</a>
+                        <a id='button-login' data-link='login.php' class='button button-light text link'>LOGIN</a>
+                        <a id='button-register' data-link='register.php' class='button button-dark text link'>REGISTER ACCOUNT</a>
                     </div>
                 </div>
 

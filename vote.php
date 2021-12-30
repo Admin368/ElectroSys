@@ -31,7 +31,7 @@
         <div class='content-wrapper'>
             <div class='topBar'>
                 <div class='topBar-logo-wrapper link'>
-                    <div id='logo-link' data-link="index.html" class='topBar-logo'></div>
+                    <div id='logo-link' data-link="index.php" class='topBar-logo'></div>
                     <div class='topBar-logo-title text'>ISU VOTER</div>
                 </div>
                 <div class='topBar-sandwich-wrapper'>
@@ -41,7 +41,7 @@
             </div>
             <ul class='menu-wrapper'>
                 <li id='menu' class='menu-item-wrapper text'>
-                    <a id='menu-logout' data-link='index.html' class='menu-item link'>Logout</a>
+                    <a id='menu-logout' data-link='index.php' class='menu-item link'>Logout</a>
                 </li>
             </ul>
             <div class='content'>

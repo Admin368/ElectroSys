@@ -36,7 +36,7 @@
                 <div id='header-wrapper'>
                     <div class='logo-wrapper'>
                         <!-- <div class='logo'></div> -->
-                        <div id='logo-link' data-link="index.html" class='logo link'></div>
+                        <div id='logo-link' data-link="index.php" class='logo link'></div>
 
                     </div>
                     <div id='title-wrapper'>
@@ -69,12 +69,12 @@
 
                 <div id='' class='form-section-2 section'>
                     <!-- <input type='submit' value="RESULTS" id='button-register' class='button button-light text submit' /> -->
-                    <!-- <input type='submit' value="RESULTS" id='butn-login' data-link='result.html' class='button button-light text submit' /> -->
-                    <a id='button-login' data-link='results.html' class='button button-light text link'>RESULTS</a>
+                    <!-- <input type='submit' value="RESULTS" id='butn-login' data-link='result.php' class='button button-light text submit' /> -->
+                    <a id='button-login' data-link='results.php' class='button button-light text link'>RESULTS</a>
 
                     <p data-input-id='email' class='text'>
                         View the current Results
-                        <!-- <a id='form-redirect' data-link='login.html' class='link form-link text'>Login</a> -->
+                        <!-- <a id='form-redirect' data-link='login.php' class='link form-link text'>Login</a> -->
                     </p>
                 </div>
             </form>

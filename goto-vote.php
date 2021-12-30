@@ -1,3 +1,13 @@
+<?php
+
+    require_once("helper.php");
+
+    if(isAuthed())
+    {
+        header("location: vote.php");
+    }
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -12,8 +22,6 @@
     <link rel="icon" type="image/x-icon" href="svg/vote.svg">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/login.css">
-    <link rel="stylesheet" href="styles/forms.css">
 
     <title>Home</title>
 </head>
@@ -24,7 +32,7 @@
             <div id='section-1' class='section'>
                 <div id='header-wrapper'>
                     <div class='logo-wrapper'>
-                        <div id='logo-link' data-link="index.html" class='logo link'></div>
+                        <div class='logo'></div>
                     </div>
                     <div id='title-wrapper'>
                         <div class='text text-title'>UESTC ISU VOTING</div>
@@ -34,29 +42,25 @@
                     </div>
                 </div>
             </div>
-            <form id='form-login' class='form-section-wrapper'>
-                <div id='' class='form-section-1 section input-wrapper'>
-
-                    <div id='input-id' data-input-id='id' class='input-item'>
-                        <p id='input-id-title' data-input-id='id' class='input-title text'>ID</p>
-                        <input id='input-id-value' data-input-id='id' data-input-error='false' class='input-value text' />
-                    </div>
-                    <div id='input-password' data-input-id='password' class='input-item'>
-                        <p id='input-password-title' data-input-id='password' class='input-title text'>PASSWORD</p>
-                        <input id='input-password-value' type='password' data-input-id='password' data-input-error='false' class='input-value text'>
-                    </div>
-
+            <div id='section-2' class='section'>
+                <div id='vote-paper'>
+                    <div id='middle-logo'></div>
                 </div>
-                <div id='' class='form-section-2 section'>
-                    <input type='submit' value="LOGIN" id='butn-login' data-link='vote.html' class='button button-light text submit' />
-                    <!-- <a id='butn-login' data-link='vote.html' class='button button-light text submit'>LOGIN</a> -->
-                    <p data-input-id='email' class='text'>
-                        Dont have an account?
-                        <a id='form-redirect' data-link='register.html' class='link form-link text'>Register</a>
-                    </p>
-
+            </div>
+            <div id='section-3' class='section'>
+                <div id='login-wrapper'>
+                    <div id='login-top'>
+                        <div id='login-top-lid'>
+                            <div id='login-top-lid-entry'></div>
+                        </div>
+                    </div>
+                    <div id='login-bottom'>
+                        <a id='button-login' data-link='login.php' class='button button-light text link'>LOGIN</a>
+                        <a id='button-register' data-link='register.php' class='button button-dark text link'>REGISTER ACCOUNT</a>
+                    </div>
                 </div>
-            </form>
+
+            </div>
         </div>
     </div>
 </body>
@@ -68,7 +72,6 @@
 <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
 <script src="scripts/jquery.js"></script>
 <script src="scripts/general.js"></script>
-<script src="scripts/login.js"></script>
-<script src="scripts/form.js"></script>
+<script src="scripts/index.js"></script>
 
 </html>

@@ -1,3 +1,13 @@
+<?php
+
+    require_once("helper.php");
+
+    if(isAuthed())
+    {
+        header("location: login.php");
+    }
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -12,6 +22,8 @@
     <link rel="icon" type="image/x-icon" href="svg/vote.svg">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/register.css">
+    <link rel="stylesheet" href="styles/forms.css">
 
     <title>Home</title>
 </head>
@@ -22,7 +34,9 @@
             <div id='section-1' class='section'>
                 <div id='header-wrapper'>
                     <div class='logo-wrapper'>
-                        <div class='logo'></div>
+                        <!-- <div class='logo'></div> -->
+                        <div id='logo-link' data-link="index.php" class='logo link'></div>
+
                     </div>
                     <div id='title-wrapper'>
                         <div class='text text-title'>UESTC ISU VOTING</div>
@@ -32,25 +46,22 @@
                     </div>
                 </div>
             </div>
-            <div id='section-2' class='section'>
-                <div id='vote-paper'>
-                    <div id='middle-logo'></div>
-                </div>
-            </div>
-            <div id='section-3' class='section'>
-                <div id='login-wrapper'>
-                    <div id='login-top'>
-                        <div id='login-top-lid'>
-                            <div id='login-top-lid-entry'></div>
-                        </div>
-                    </div>
-                    <div id='login-bottom'>
-                        <a id='button-login' data-link='login.html' class='button button-light text link'>LOGIN</a>
-                        <a id='button-register' data-link='register.html' class='button button-dark text link'>REGISTER ACCOUNT</a>
+            <form id='form-register' class='form-section-wrapper'>
+                <div id='' class='form-section-1 section input-wrapper'>
+                    <div id='input-email' data-input-id='email' class='input-item'>
+                        <p id='input-email-title' data-input-id='email' class='input-title text'>EMAIL</p>
+                        <input id='input-email-value' value='' data-input-id='email' data-input-error='false' type='email' class='input-value text' />
                     </div>
                 </div>
 
-            </div>
+                <div id='' class='form-section-2 section'>
+                    <input type='submit' value="REGISTER" id='button-register' class='button button-light text submit' />
+                    <p data-input-id='email' class='text'>
+                        Have an account already?
+                        <a id='form-redirect' data-link='login.php' class='link form-link text'>Login</a>
+                    </p>
+                </div>
+            </form>
         </div>
     </div>
 </body>
@@ -62,6 +73,7 @@
 <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
 <script src="scripts/jquery.js"></script>
 <script src="scripts/general.js"></script>
-<script src="scripts/index.js"></script>
+<script src="scripts/register.js"></script>
+<script src="scripts/form.js"></script>
 
 </html>

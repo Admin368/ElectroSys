@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -12,6 +13,7 @@
     <link rel="icon" type="image/x-icon" href="svg/vote.svg">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/vote.css">
+    <link rel="stylesheet" href="styles/results.css">
 
     <title>Vote</title>
 </head>
@@ -21,7 +23,7 @@
         <div class='content-wrapper'>
             <div class='topBar'>
                 <div class='topBar-logo-wrapper link'>
-                    <div id='logo-link' data-link="index.html" class='topBar-logo'></div>
+                    <div id='logo-link' data-link="index.php" class='topBar-logo'></div>
                     <div class='topBar-logo-title text'>ISU VOTER</div>
                 </div>
                 <div class='topBar-sandwich-wrapper'>
@@ -31,11 +33,16 @@
             </div>
             <ul class='menu-wrapper'>
                 <li id='menu' class='menu-item-wrapper text'>
-                    <a id='menu-logout' data-link='index.html' class='menu-item link'>Logout</a>
+                    <a id='menu-logout' data-link='goto-vote.php' class='menu-item link'>Cast Vote</a>
+                </li>
+                <li id='menu' class='menu-item-wrapper text'>
+                    <a id='menu-logout' data-link='index.php' class='menu-item link'>Logout</a>
                 </li>
             </ul>
             <div class='content'>
-                <ul class='candidateList'>
+                <ul class='candidateList resultList'>
+                    <!-- <ul class='resultList'> -->
+                    <canvas id="myChart" width="100%" height="100%"></canvas>
                 </ul>
             </div>
 
@@ -50,6 +57,7 @@
 <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
 <script src="scripts/jquery.js"></script>
 <script src="scripts/general.js"></script>
-<script src="scripts/vote.js"></script>
+<script src="scripts/chart.mini.js"></script>
+<script src="scripts/results.js"></script>
 
 </html>

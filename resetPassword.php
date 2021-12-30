@@ -1,3 +1,13 @@
+<?php
+
+    require_once("helper.php");
+
+    if(isAuthed())
+    {
+        header("location: vote.php");
+    }
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -12,7 +22,7 @@
     <link rel="icon" type="image/x-icon" href="svg/vote.svg">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/register.css">
+    <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="styles/forms.css">
 
     <title>Home</title>
@@ -24,9 +34,7 @@
             <div id='section-1' class='section'>
                 <div id='header-wrapper'>
                     <div class='logo-wrapper'>
-                        <!-- <div class='logo'></div> -->
-                        <div id='logo-link' data-link="index.html" class='logo link'></div>
-
+                        <div id='logo-link' data-link="index.php" class='logo link'></div>
                     </div>
                     <div id='title-wrapper'>
                         <div class='text text-title'>UESTC ISU VOTING</div>
@@ -36,20 +44,26 @@
                     </div>
                 </div>
             </div>
-            <form id='form-register' class='form-section-wrapper'>
+            <form id='form-reset' class='form-section-wrapper'>
                 <div id='' class='form-section-1 section input-wrapper'>
-                    <div id='input-email' data-input-id='email' class='input-item'>
-                        <p id='input-email-title' data-input-id='email' class='input-title text'>EMAIL</p>
-                        <input id='input-email-value' value='' data-input-id='email' data-input-error='false' type='email' class='input-value text' />
+                    <div id='input-new-password' data-input-id='new-password' class='input-item'>
+                        <p id='input-new-password-title' data-input-id='new-password' class='input-title text'>NEW PASSWORD</p>
+                        <input id='input-new-password-value' type='password' data-input-id='new-password' data-input-error='false' class='input-value text'>
                     </div>
-                </div>
+                    <div id='input-confirm-password' data-input-id='confirm-password' class='input-item'>
+                        <p id='input-confirm-password-title' data-input-id='confirm-password' class='input-title text'>CONFIRM PASSWORD</p>
+                        <input id='input-confirm-password-value' type='password' data-input-id='confirm-password' data-input-error='false' class='input-value text'>
+                    </div>
 
+                </div>
                 <div id='' class='form-section-2 section'>
-                    <input type='submit' value="REGISTER" id='button-register' class='button button-light text submit' />
+                    <input type='submit' value="SET PASSWORD" id='butn-login' data-link='login.php' class='button button-light text submit' />
+                    <!-- <a id='butn-login' data-link='vote.php' class='button button-light text submit'>LOGIN</a> -->
                     <p data-input-id='email' class='text'>
-                        Have an account already?
-                        <a id='form-redirect' data-link='login.html' class='link form-link text'>Login</a>
+                        Already have an Account?
+                        <a id='form-redirect' data-link='login.php' class='link form-link text'>LOGIN</a>
                     </p>
+
                 </div>
             </form>
         </div>
@@ -63,7 +77,7 @@
 <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
 <script src="scripts/jquery.js"></script>
 <script src="scripts/general.js"></script>
-<script src="scripts/register.js"></script>
+<script src="scripts/login.js"></script>
 <script src="scripts/form.js"></script>
 
 </html>

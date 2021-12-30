@@ -1,3 +1,12 @@
+<?php
+
+    require_once("helper.php");
+
+    if(isAuthed())
+    {
+        header("location: vote.php");
+    }
+?>
 
 <!doctype html>
 <html lang="en">
@@ -12,37 +21,46 @@
     <!-- <link href="styles/hover.css" rel="stylesheet"> -->
     <link rel="icon" type="image/x-icon" href="svg/vote.svg">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/vote.css">
-    <link rel="stylesheet" href="styles/results.css">
+    <link rel="stylesheet" href="styles/index.css">
 
-    <title>Vote</title>
+    <title>Home</title>
 </head>
 
 <body>
-    <div id='select-wrapper' class='site-wrapper'>
+    <div id='index-wrapper' class='site-wrapper'>
         <div class='content-wrapper'>
-            <div class='topBar'>
-                <div class='topBar-logo-wrapper link'>
-                    <div id='logo-link' data-link="index.html" class='topBar-logo'></div>
-                    <div class='topBar-logo-title text'>ISU VOTER</div>
-                </div>
-                <div class='topBar-sandwich-wrapper'>
-                    <div class='topBar-sandwich-text text'>Menu</div>
-                    <div class='topBar-sandwich-icon'></div>
+            <div id='section-1' class='section'>
+                <div id='header-wrapper'>
+                    <div class='logo-wrapper'>
+                        <div class='logo'></div>
+                    </div>
+                    <div id='title-wrapper'>
+                        <div class='text text-title'>UESTC ISU VOTING</div>
+                    </div>
+                    <div id='title-subText-wrapper'>
+                        <div id='title-subText' class='text'>Vote for your ISU leader</div>
+                    </div>
                 </div>
             </div>
-            <ul class='menu-wrapper'>
-                <li id='menu' class='menu-item-wrapper text'>
-                    <a id='menu-logout' data-link='index.html' class='menu-item link'>Logout</a>
-                </li>
-            </ul>
-            <div class='content'>
-                <ul class='candidateList resultList'>
-                    <!-- <ul class='resultList'> -->
-                    <canvas id="myChart" width="100%" height="100%"></canvas>
-                </ul>
+            <div id='section-2' class='section'>
+                <div id='vote-paper'>
+                    <div id='middle-logo'></div>
+                </div>
             </div>
+            <div id='section-3' class='section'>
+                <div id='login-wrapper'>
+                    <div id='login-top'>
+                        <div id='login-top-lid'>
+                            <div id='login-top-lid-entry'></div>
+                        </div>
+                    </div>
+                    <div id='login-bottom'>
+                        <a id='button-login' data-link='login.html' class='button button-light text link'>LOGIN</a>
+                        <a id='button-register' data-link='register.html' class='button button-dark text link'>REGISTER ACCOUNT</a>
+                    </div>
+                </div>
 
+            </div>
         </div>
     </div>
 </body>
@@ -54,7 +72,6 @@
 <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
 <script src="scripts/jquery.js"></script>
 <script src="scripts/general.js"></script>
-<script src="scripts/chart.mini.js"></script>
-<script src="scripts/results.js"></script>
+<script src="scripts/index.js"></script>
 
 </html>

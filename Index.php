@@ -1,4 +1,10 @@
+<?php
+ 
+    $isProtected = false;
 
+    require_once("helper.php");
+
+?>
 
 <!doctype html>
 <html lang="en">

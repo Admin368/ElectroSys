@@ -1,9 +1,11 @@
 <?php
- 
-    $isProtected = false;
 
     require_once("helper.php");
 
+    if(isAuthed())
+    {
+        header("location: vote.php");
+    }
 ?>
 
 <!doctype html>

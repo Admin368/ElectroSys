@@ -1,33 +1,21 @@
 <?php
 
-if(!isset($isProtected)){ // can't access this file directly
-
-    die("resource not found");
-
-}
-
-// checks if user is already logged in and sends user to the logged in url
 
 $env = require_once("env.php");
 $apihome = $env["apiUrl"];
 
-$url = $apihome."authenticate";
-
-$res = (array)file_get_contents($url);
-
-if($res["message"] == "success")
+function isAuthed()
 {
-    header("location: vote.php");
+    /*
+    * checks if user is already logged in 
+    */
+    global $apihome;
 
-    die();
-}else{
+    $url = $apihome."authenticate";
 
-    if($isProtected)
-    {
-        header("location: login.php");
+    $res = (array)@file_get_contents($url);
 
-        die();
-    }
+    return $res["message"] == "success";
 }
 
 ?>
